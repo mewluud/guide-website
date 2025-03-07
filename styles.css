@@ -1,0 +1,108 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E6F4E6; /* Light green background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Sticky Header */
+.header {
+    background-color: #3A913F; /* Dark Green */
+    display: flex;
+    justify-content: space-between; /* Keeps space between logos */
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Adjust padding so content isn't hidden under the fixed header */
+body {
+    padding-top: 80px;
+}
+
+/* Logo Styles */
+.logo {
+    height: 60px; /* Adjusted logo size */
+}
+
+/* Move the right logo slightly to the left */
+.right-logo {
+    margin-right: 30px; /* Moves the logo left */
+}
+
+/* Content Section */
+.content {
+    margin: 50px;
+}
+
+/* Video Container */
+.video-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px; /* Smaller for mobile */
+    border-radius: 10px;
+    border: none;
+}
+
+/* PDF Download Section */
+.pdf-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 90%;
+}
+
+.download-button {
+    background-color: #287C2D; /* Dark Green */
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #1E5A20;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 8px;
+    }
+
+    .logo {
+        height: 75px; /* Smaller for mobile */
+    }
+
+    .right-logo {
+        margin-right: 35px; /* Adjust for smaller screens */
+    }
+
+    .video-container, .pdf-container {
+        width: 90%;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
